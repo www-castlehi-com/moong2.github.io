@@ -350,3 +350,19 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+.post-header {
+    display: block;
+    object-fit: cover;
+    border-radius: 0px;
+    width: 100%;
+    opacity: 1;
+    object-position: center 48.28%;
+    color: white; }
+  
+.post {
+padding-top: 8vh;
+max-width: 720px;
+margin: 0 auto; }
+.post div.highlighter-rouge {
+    right: 150px; }
+  
