@@ -99,6 +99,8 @@
         
         <p>현재 회원 정보 수정/탈퇴 기능을 추가하고 있으며, 더 많은 사람이 서비스를 이용했으면 하는 마음에 배포작업까지 진행하고 있습니다.</p>
         
+        <hr>
+        
         <h3 id="main-features">Main features</h3>
         
         <ul style="list-style: none;">
@@ -108,7 +110,7 @@
                     <h4 class="text-faded" style="color:black;">Main 화면</h4>
                     <p class="text-faded" style="color:black;">사용자의 가임기/비가임기/생리기간 을 보여주며 배란 예정일, 생리 예정일, 마지막 생리일, 가임기 시작, 평균 생리주기를 한눈에 확인할 수 있습니다.</p>
                 </div>
-                <hr>
+                <hr style="color:#FFDBCF;">
             </li>
             <li>
                 <div>
@@ -119,11 +121,12 @@
                         <li style="color:blue;">예상 가임기</li>
                         <li style="color:green;">예상 배란기</li>
                     </ul>
+                    <br>
                     <p class="text-faded" style="color:black;">생리 시작 버튼을 누르고 저장을 누르면 생리 시작일이 저장이 됩니다. 예상 주기일을 통해 예상 생리 주기와 생리 기간 가임기를 예상하여 달력에 표시합니다. 생리 종료 버튼을 누르고 저장을 누르면 생리 종료일이 저장이 되며, 저장된 기간을 바탕으로 예상 가임기를 달력에 표시합니다. </p>
                     <p class="text-faded" style="color:black;">symptom 화면을 통해 자신의 컨디션을 체크할 수 있으며 사용자의 생리전 증후군을 체크할 수 있다.</p>
                     <p class="text-faded" style="color:black;">mucus 화면을 통해 자신의 질 분비물을 체크하여 부인과에 갔을 때 자신의 증상에 대해 더 자세히 나타낼 수 있다.</p>      
                 </div>
-                <hr>
+                <hr style="color:#FFDBCF;">
             </li>
             <li>
                 <div>
@@ -153,41 +156,75 @@
                         </li>
                     </ul>
                 </div>
+                <hr style="color:#FFDBCF;">
+            </li>
+            <li>
+                <div>
+                    <img src="/img/portfolio/medicmagic_selftest.jpg" alt="main" width="100%" height="100%">
+                    <h4 class="text-faded" style="color:black;">Self Test 화면</h4>
+                    <p class="text-faded" style="color:black;">사용자가 원하는 검사를 리스트에서 고른 다음 자신의 증상에 맞게 체크한 후 DONE 버튼을 누르게 되면 결과가 나옵니다.</p>
+                </div>
                 <hr>
             </li>
-            <li>한 눈에 관리 기록 현황을 보여주는 달력 기능</li>
-            <li>상세 정보와 관리 팁을 제공하는 식물 정보 검색 기능</li>
+            <li>
+                <div>
+                    <img src="/img/portfolio/medicmagic_graph.jpg" alt="main" width="100%" height="100%">
+                    <h4 class="text-faded" style="color:black;">Graph 화면</h4>
+                    <p class="text-faded" style="color:black;">사용자의 입력을 바탕으로 월경주기, 일일 수분 섭취량, 운동량, 수면시간을 그래프로 보여줍니다.</p>
+                </div>
+                <hr style="color:#FFDBCF;">
+            </li>
         </ul>
+
+        <hr>
         
         <h3 id="stack">Stack</h3>
         
-        <ul>
-            <li>Node.js / Express / TypeScript / TypeORM / MySQL / AWS S3</li>
-        </ul>
+        <div class="container">
+            <div>
+                <div class="col-lg-12 text-center">
+                    <div class="service-box">
+                        <h3>BACK-END</h3>
+                        <p class="text-muted">Spring Boot, AWS(EC2, RDS), Tomcat, Maven, Linux, MariaDB</p>
+                    </div>
+                </div>
+                <hr style="color : #FFDBCF;">
+                <div class="col-lg-12 text-center">
+                    <div class="service-box">
+                        <h3>UI/UX</h3>
+                        <p class="text-muted">Android Studio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <hr>
         
         <h2 id="works">Works</h2>
+            <div class="col-lg-12 text-center">
+                <div class="service-box">
+                    <h3>BACK-END</h3>
+                    <p>TDD를 위한 junit, mock, assertj dependency 사용</p>
         
-        <p>유저가 식물의 상세정보를 볼 수 있도록 공공 API에서 데이터를 받아와 식물 정보 검색에 이용할 데이터베이스 구성. 총 314종의 식물 상세정보를 받아올 수 있음.</p>
-        
-        <p>식물 정보 검색 시 최초 1회에 한해 공공 API에 식물의 상세 정보 요청함. 받은 정보는 가공 후 데이터베이스에 저장함으로써 외부 API 요청을 최소화함. 추가로 접근하지 않는 정보는 저장하지 않음으로써 데이터베이스 용량을 최적화함.</p>
-        
-        <p>AWS S3에 이미지 업로드, 삭제 기능 구현. 더 이상 사용하지 않는 이미지를 삭제해서 불필요한 S3 용량 차지를 없앰.</p>
-        
-        <p>외부 API 요청, S3 이미지 삭제, 데이터 가공 등 자주 사용하는 기능들은 모듈화하여 확장성을 높임.</p>
-        
-        <p>TypeScript의 type들을 /@types 디렉토리의 d.ts 파일로 만들어 효율적으로 관리함.</p>
+                    <p>로컬 테스트(mysql)를 위한 mysql-connector와 jdbc dependency 사용</p>
+                    
+                    <p>getEntity의 transaction annotation을 적용하기 위한 tx dependency 사용</p>
+                    
+                    <p>호스팅을 위한 AWS EC2(+탄력적 ip)사용</p>
+                    
+                    <p>EC2에 TOMCAT 설치 후(sudo yum install tomcat), 프로젝트 BUILD시 생성되는 WAR을 TOMCAT이 배포(FileZilla이용)</p>
+                </div>
+            </div>
+            <hr style="color : #FFDBCF;">
+            <div class="col-lg-12 text-center">
+                <div class="service-box">
+                    <h3>UI/UX</h3>
+                    <p class="text-muted">그래프 OpenSource 'GraphView' : https://github.com/jjoe64/GraphView</p>
+                    <p class="text-muted">캘린더 OpenSource 'ClendarView-material' : https://github.com/prolificinteractive/material-calendarview</p>
+                </div>
+            </div>
         
         <hr>
-        
-        <h2 id="service-images">Service Images</h2>
-        
-        <p><img src="/assets/cholog/02-plants.png" alt="plants" width="100%" height="100%">
-        <img src="/assets/cholog/03-plantInfo.png" alt="plants" width="100%" height="100%">
-        <img src="/assets/cholog/04-plantLog.png" alt="plants" width="100%" height="100%">
-        <img src="/assets/cholog/05-logList01.png" alt="plants" width="100%" height="100%">
-        <img src="/assets/cholog/06-logList02.png" alt="plants" width="100%" height="100%"></p>   
   
     </div>
 
