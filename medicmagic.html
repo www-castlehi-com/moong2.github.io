@@ -81,6 +81,69 @@
         </div>
       </div>
     </div>
+    <div class="post container">
+  
+        <p><em><strong><a href="https://github.com/moong2/MedicMagic-BACKEND" target="\_blank">BACK-END Github &gt;</a></strong></em></p>
+
+        <p><em><strong><a href="https://github.com/moong2/MedicMagic-FRONTEND" target="\_blank">FRONT-END Github &gt;</a></strong></em></p>
+        
+        <hr>
+        
+        <h2 id="about">About</h2>
+
+        <p>코로나로 인해 생활패턴이 망가진 경우를 흔하게 볼 수 있습니다. 이러한 사람들을 위해 적당한 수면시간을 알려주거나 운동시간을 기록해주는 많은 서비스가 존재합니다. </p>
+
+        <p>특히 여성은 생활패턴에 따라 컨디션이 달라지기에 생리주기가 크게 영향을 받습니다. 생리 주기가 달라지면 신경 써야 할 부분이 많습니다. 따라서 대다수 사람들의 핸드폰에는 기본적으로 스케줄러, 생리주기 어플, 운동 어플 등이 설치되어 있습니다. </p>
+
+        <p>이러한 기본 상황을 바탕으로 '달력 하나에 주로 쓰는 기능들을 한번에 볼 수 있다면 어떨까?' 하는 생각으로 이 프로젝트를 시작하게 되었습니다.</p>
+        
+        <p>현재 회원 정보 수정/탈퇴 기능을 추가하고 있으며, 더 많은 사람이 서비스를 이용했으면 하는 마음에 배포작업까지 진행하고 있습니다.</p>
+        
+        <h3 id="main-features">Main features</h3>
+        
+        <ul>
+            <li>
+                <img src="/img/portfolio/medicmagic_main.png" alt="main" width="100%" height="100%">
+                <h4 class="text-faded">Main 화면</h4>
+                <p class="text-faded">사용자의 가임기/비가임기/생리기간 을 보여주며 배란 예정일, 생리 예정일, 마지막 생리일, 가임기 시작, 평균 생리주기를 한눈에 확인할 수 있습니다.</p>
+            </li>
+            <li>식물 관리 상태 기록 기능</li>
+            <li>직관적으로 선택할 수 있는 파라미터(식물 관리 항목) 입력 기능</li>
+            <li>한 눈에 관리 기록 현황을 보여주는 달력 기능</li>
+            <li>상세 정보와 관리 팁을 제공하는 식물 정보 검색 기능</li>
+        </ul>
+        
+        <h3 id="stack">Stack</h3>
+        
+        <ul>
+            <li>Node.js / Express / TypeScript / TypeORM / MySQL / AWS S3</li>
+        </ul>
+        
+        <hr>
+        
+        <h2 id="works">Works</h2>
+        
+        <p>유저가 식물의 상세정보를 볼 수 있도록 공공 API에서 데이터를 받아와 식물 정보 검색에 이용할 데이터베이스 구성. 총 314종의 식물 상세정보를 받아올 수 있음.</p>
+        
+        <p>식물 정보 검색 시 최초 1회에 한해 공공 API에 식물의 상세 정보 요청함. 받은 정보는 가공 후 데이터베이스에 저장함으로써 외부 API 요청을 최소화함. 추가로 접근하지 않는 정보는 저장하지 않음으로써 데이터베이스 용량을 최적화함.</p>
+        
+        <p>AWS S3에 이미지 업로드, 삭제 기능 구현. 더 이상 사용하지 않는 이미지를 삭제해서 불필요한 S3 용량 차지를 없앰.</p>
+        
+        <p>외부 API 요청, S3 이미지 삭제, 데이터 가공 등 자주 사용하는 기능들은 모듈화하여 확장성을 높임.</p>
+        
+        <p>TypeScript의 type들을 /@types 디렉토리의 d.ts 파일로 만들어 효율적으로 관리함.</p>
+        
+        <hr>
+        
+        <h2 id="service-images">Service Images</h2>
+        
+        <p><img src="/assets/cholog/02-plants.png" alt="plants" width="100%" height="100%">
+        <img src="/assets/cholog/03-plantInfo.png" alt="plants" width="100%" height="100%">
+        <img src="/assets/cholog/04-plantLog.png" alt="plants" width="100%" height="100%">
+        <img src="/assets/cholog/05-logList01.png" alt="plants" width="100%" height="100%">
+        <img src="/assets/cholog/06-logList02.png" alt="plants" width="100%" height="100%"></p>   
+  
+    </div>
 
         <!-- jQuery -->
     <script src="js/jquery.js"></script>
