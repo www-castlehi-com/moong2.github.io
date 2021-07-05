@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
 html,
 body {
     height: 100%;
@@ -6,6 +8,7 @@ body {
 
 body {
     @include serif-font;
+    font-family : 'Nanum Gothic';
 }
 
 hr {
@@ -34,6 +37,7 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    font-family : 'Nanum Gothic';
 }
 
 p {
@@ -73,10 +77,12 @@ aside {
     background-color: white;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
+    font-family : 'Nanum Gothic';
     @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
+        font-family : 'Nanum Gothic';
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
@@ -248,6 +254,7 @@ header {
             .project-category,
             .project-name {
                 @include sans-serif-font;
+                font-family : 'Nanum Gothic';
                 padding: 0 15px;
             }
             .project-category {
@@ -306,6 +313,7 @@ header {
 
 .btn {
     @include sans-serif-font;
+    font-family : 'Nanum Gothic';
     border: none;
     border-radius: 300px;
     font-weight: 700;
