@@ -6,7 +6,7 @@ baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
 url: "portfolio" # the base hostname & protocol for your site
 
 github_username: moong2
-velog_username : www_castlehi
+velog_username : www.castlehi.com
 
 # Build settings
 markdown: kramdown
